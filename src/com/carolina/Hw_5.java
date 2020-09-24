@@ -12,7 +12,7 @@ public class Hw_5 {
         int a;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите размер массива ");
+        System.out.println("Введите количество строк: ");
         a = scanner.nextInt();
 
 

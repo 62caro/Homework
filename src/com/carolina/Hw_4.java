@@ -22,8 +22,9 @@ public class Hw_4 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите размер массива ");
+        System.out.println("Введите количество строк: ");
         a = scanner.nextInt();
+        System.out.println("Введите количество столбцов: ");
         b = scanner.nextInt();
 
         int[][] array = new int[a][b];
@@ -44,7 +45,7 @@ public class Hw_4 {
                 }
             }
         }
-        System.out.println("Чет/нечет \t\t" + Arrays.deepToString(array));
+        System.out.println("Чет (0) /нечет (1): \t\t" + Arrays.deepToString(array));
 
     }
 
