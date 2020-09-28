@@ -1,6 +1,9 @@
 package hw30_09_2020;
 
-public class Hw2 {
+/*Одноклеточная амеба каждые 3 часа делится на 2 клетки.
+Необходимо определить, сколько амеб будет через 3, 6, 9, 12,..., 24 часа.*/
+
+public class Hw_2 {
     public static void main(String[] args) {
         int i = 3;
         int cell = 0;
