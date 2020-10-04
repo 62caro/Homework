@@ -9,14 +9,14 @@ public class ValidateDataCard {
             private int typeCard;
             private String cardHolder;
             private String expiryDate;
-            private String CVV;
+            private String cvv;
 
             public Data() {
                 this.numberCard = numCard;
                 this.typeCard = typeC;
                 this.cardHolder = cardHold;
                 this.expiryDate = expDate;
-                this.CVV = cvvCode;
+                this.cvv = cvvCode;
             }
 
             public String getNumberCard() {
@@ -52,11 +52,11 @@ public class ValidateDataCard {
             }
 
             public String getCVV() {
-                return CVV;
+                return cvv;
             }
 
-            public void setCVV(String CVV) {
-                this.CVV = CVV;
+            public void setCVV(String cvv) {
+                this.cvv = cvv;
             }
 
             public void validate() {
@@ -69,7 +69,7 @@ public class ValidateDataCard {
                 if (cardHold.equals("")){
                     System.out.println("Карта без владельца");
                 } else System.out.println("Владелец " + cardHold);
-                if (CVV.equals("") || CVV.length() != 3){
+                if (cvv.equals("") || cvv.length() != 3){
                     System.out.println("CVV не соответствует формату");
                 } else System.out.println("CVV соответствует формату");
             }
