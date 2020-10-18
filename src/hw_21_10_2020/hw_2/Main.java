@@ -15,7 +15,4 @@ public class Main {
         System.out.println("Position of the letter " + letter + " = " + Letter.valueOf(letter).getLetterPosition());
     }
 
-
-
-
 }

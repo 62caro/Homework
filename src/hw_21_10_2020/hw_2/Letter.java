@@ -28,9 +28,7 @@ public enum Letter {
     y,
     z;
 
-
-
-    public int getLetterPosition(){
+    public int getLetterPosition() {
         return ordinal();
     }
 }

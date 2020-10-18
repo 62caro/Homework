@@ -41,7 +41,7 @@ public class Car {
         int rand;
         rand = (int) (Math.random() * 20);
 
-        if(rand % 2 == 0){
+        if (rand % 2 == 0) {
             throw new StartException("Number is even");
         } else System.out.println(car_brand + " started");
     }
