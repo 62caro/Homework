@@ -23,7 +23,7 @@ public class Computer {
                 '}';
     }
 
-    public static void turnOn(boolean boolTrue) {
+    public static void turnOn(boolean boolOn) {
 
         int random = (int) (Math.random() * 2);
 
@@ -36,7 +36,7 @@ public class Computer {
 
        // System.out.println(random);
 
-        if (error == boolTrue) {
+        if (error == boolOn) {
             if (rand == random) {
                 System.out.println("Компьютер включен");
             } else {
@@ -51,7 +51,7 @@ public class Computer {
 
     }
 
-    public static void shutdown(boolean boolTrue) {
+    public static void shutdown(boolean boolShutdown) {
 
         int random = (int) (Math.random() * 2);
 
@@ -64,7 +64,7 @@ public class Computer {
 
         System.out.println(random);
 
-        if (error == boolTrue) {
+        if (error == boolShutdown) {
             if (rand == random) {
                 System.out.println("Компьютер выключен");
             } else {

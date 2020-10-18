@@ -60,18 +60,22 @@ public class ValidateDataCard {
             }
 
             public void validate() {
-                if (numCard.length() == 16) {
+                if (numCard.length() == 16 || !checkString(numberCard)) {
                     System.out.println("Валидация номера карты прошла успешно");
                 } else System.out.println("Номер карты не соответствует формату");
                 if (typeC == 1) {
                     System.out.println("Карта являтся дебетовой");
                 } else System.out.println("Карта являтся кредитной");
-                if (cardHold.equals("")){
+                if (cardHold.isEmpty()) {
                     System.out.println("Карта без владельца");
                 } else System.out.println("Владелец " + cardHold);
-                if (cvv.equals("") || cvv.length() != 3){
+                if (cvv.length() != 3 || !checkString(cvv)) {
                     System.out.println("CVV не соответствует формату");
                 } else System.out.println("CVV соответствует формату");
+            }
+            public boolean checkString(String string) {
+                if (string == null) return false;
+                return string.matches("^-?\\d+$");
             }
 
         }
@@ -80,4 +84,6 @@ public class ValidateDataCard {
         dataValidate.validate();
 
     }
+
+
 }
