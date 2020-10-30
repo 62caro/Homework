@@ -8,7 +8,7 @@ public class Main {
         scottish_fold.params();
         scottish_fold.meow();
         scottish_fold.eating();
-        Cat.move();
+        scottish_fold.move();
         System.out.println();
 
         Dog billy = new Dog("Billy", 8, 50);
@@ -16,14 +16,14 @@ public class Main {
         billy.params();
         billy.woof();
         billy.eating();
-        Dog.move();
+        billy.move();
         System.out.println();
 
         Mouse house_mouse = new Mouse("House mouse", 100, 10);
         house_mouse.printBreed();
         house_mouse.params();
         house_mouse.piii();
-        Mouse.move();
+        house_mouse.move();
         house_mouse.eaten();
     }
 }

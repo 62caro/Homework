@@ -1,6 +1,6 @@
 package hw_14_10_2020.hw_1;
 
-public abstract class Animals {
+public abstract class Animals implements AnimalActions {
 
     protected int weight;
     protected int height;
@@ -22,7 +22,8 @@ public abstract class Animals {
         this.weight = weight;
     }
 
-    protected static String voice(String say) {
+    @Override
+    public String voice(String say) {
         return say;
     }
 
@@ -30,8 +31,11 @@ public abstract class Animals {
 
     public abstract String eat();
 
-    public static void move() {
+    @Override
+    public  void move() {
         System.out.println("Is moving");
     }
+
+
 
 }

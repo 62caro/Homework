@@ -16,7 +16,7 @@ public class Dog extends DogFamily{
     }
 
     public void woof(){
-        System.out.println("Dog says: " + Dog.voice("woof"));
+        System.out.println("Dog says: " + voice("woof"));
     }
 
     public void params(){

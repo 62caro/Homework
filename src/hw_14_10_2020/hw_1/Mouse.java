@@ -16,7 +16,7 @@ public class Mouse extends MouseFamily {
     }
 
     public void piii(){
-        System.out.println("Mouse says: " + Mouse.voice("piii"));
+        System.out.println("Mouse says: " + voice("piii"));
     }
 
     public void params(){

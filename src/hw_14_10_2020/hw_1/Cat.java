@@ -17,7 +17,7 @@ public class Cat extends CatFamily{
     }
 
     public void meow(){
-        System.out.println("Cat says: " + Cat.voice("Meow"));
+        System.out.println("Cat says: " + voice("Meow"));
     }
 
     public void params(){
