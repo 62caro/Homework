@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<employee>
+    <employee type="Администрация">
+        <name>Иванов Иван Иванович</name>
+        <position>Главный врач</position>
+        <department>Администрация</department>
+        <experience>40 лет</experience>
+    </employee>
+    <employee type="Терапия">
+        <name>Петрова Мария Ивановна</name>
+        <position>ВОП</position>
+        <department>Терапевтическое отделение</department>
+        <experience>18 лет</experience>
+        <name>Николаев Николай Николаевич</name>
+        <position>ВОП</position>
+        <department>Терапевтическое отделение</department>
+        <experience>10 лет</experience>
+    </employee>
+</employee>
